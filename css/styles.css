@@ -3,15 +3,18 @@
 	margin:0px;
 	font-family:"georgia";
 }
-table, th, td {
+th, td {
 
 	width: 200px;
 }
 th, td {
 	border: 1px solid black;
 }
-td {
+td.calendar-day {
 	height:75px;
+}
+tr.header{
+	font-weight: bold;
 }
 .nextMonth {
 	
@@ -339,3 +342,4 @@ label{
     display: block;
   }
 }
+

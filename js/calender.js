@@ -6,11 +6,13 @@ var monthsOfTheYear = ['January', 'February', 'March', 'April',
 
 var daysOfTheMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var currentDate = new Date();
+var monthName;
 console.log(currentDate);
 
+//calendar constructor
 function Calendar(month, year) {
     this.month = (isNaN(month) || month == null) ? currentDate.getMonth() : month;
-    this.year = (isNaN(year) || year == null) ? currentDate.getYear() : year;
+    this.year = (isNaN(year) || year == null) ? currentDate.getFullYear() : year;
     this.html = ' ';
 }
 
@@ -26,7 +28,7 @@ Calendar.prototype.generateHTML = function () {
         }
     }
 
-    var monthName = monthsOfTheYear[this.month];
+    monthName = monthsOfTheYear[this.month];
     var html = '<table class="calendar table">';
     html += '<tr><th colspan="7">';
     html += monthName + "&nbsp" + this.year;
@@ -42,7 +44,7 @@ Calendar.prototype.generateHTML = function () {
 
     var day = 1;
     // this is for weeks
-    for (var i = 0; i < 9; j++) {
+    for (var i = 0; i < 9; i++) {
         // this is for weekdays
         for (var j = 0; j <= 6; j++) {
             html += '<td class="calendar-day">';
@@ -72,3 +74,8 @@ Calendar.prototype.getHTML = function() {
 var cal = new Calendar();
 cal.generateHTML(currentDate);
 document.getElementById('cal').innerHTML = cal.getHTML();
+
+function nextMonth() {
+    monthName = monthName + 1;
+    document.getElementById('cal').innerHTML = cal.getHTML();
+}
