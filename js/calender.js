@@ -6,8 +6,13 @@ var monthsOfTheYear = ['January', 'February', 'March', 'April',
 
 var daysOfTheMonth = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 var currentDate = new Date();
+var currentMonth = currentDate.getMonth();
 var monthName;
+var month;
+var year;
 console.log(currentDate);
+console.log(currentMonth);
+var modDate = new Date();
 
 //calendar constructor
 function Calendar(month, year) {
@@ -27,6 +32,8 @@ Calendar.prototype.generateHTML = function () {
             monthLength = 29;
         }
     }
+
+    
 
     monthName = monthsOfTheYear[this.month];
     var html = '<table class="calendar table">';
@@ -70,12 +77,9 @@ Calendar.prototype.generateHTML = function () {
 Calendar.prototype.getHTML = function() {
     return this.html;
 }
-
 var cal = new Calendar();
-cal.generateHTML(currentDate);
+
+//call the calendar function
+cal.generateHTML(modDate);
 document.getElementById('cal').innerHTML = cal.getHTML();
 
-function nextMonth() {
-    monthName = monthName + 1;
-    document.getElementById('cal').innerHTML = cal.getHTML();
-}
