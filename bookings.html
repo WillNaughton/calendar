@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Home</title>
 	<link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-<div class="parallax" style='background-image:url("media/background-accounting.jpg");'>
+	<div class="parallax" style='background-image:url("media/background-accounting.jpg");'>
 		<div class="over-image blue">
 			<div class="nav">
 				<ul>
 					<li><a class="border" href="index.html">About</a></li>
 					<li><a class="border" href="services.html">Services</a></li>
 					<li><a class="border" href="bookings.html">Bookings</a></li>
-					<li><a sclass="border"href="theteam.html">The Team</a></li>
+					<li><a sclass="border" href="theteam.html">The Team</a></li>
 					<li><a class="border" href="contact.html">FAQ</a></li>
 					<li class="title"><a class=".title" href="HOME">Accuracy Accounting</a></li>
 				</ul>
@@ -29,52 +31,783 @@
 			<h1>Our Events</h1>
 		</div>
 		<div class="flex-grid">
-			
-	
-	<div class="center">
-        <button class='prevMonth' onclick='previous()'>PREV</button>
-        <button class="nextMonth" onclick="next()">NEXT</button>
-        <div id='cal'>
 
-        </div>
 
-	</div>
-	</div>
+			<div class="center-cal">
+				<button class="prev">Prev</button>
+				<button class="next">Next</button>
+				<div id="jan" class="cal">
+					<h2>January</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="feb" class="cal" >
+					<h2>Febuary</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="mar" class="cal">
+					<h2>March</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+						</tr>
+						<tr>
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="apr" class="cal">
+					<h2>April</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25<br>
+							<strong>Company Party</strong><br>
+						7:00pm @ the Plaza</td>
+							<td>26</td>
+							<td>27</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>30</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="may" class="cal">
+					<h2>May</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+						</tr>
+						<tr>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+						</tr>
+						<tr>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+						</tr>
+						<tr>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+						</tr>
+						<tr>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="jun" class="cal">
+					<h2>June</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+						</tr>
+						<tr>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+						</tr>
+						<tr>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+						</tr>
+						<tr>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+						</tr>
+						<tr>
+							<td>30</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="jul" class="cal">
+					<h2>July</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+						</tr>
+						<tr>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+						</tr>
+						<tr>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="aug" class="cal">
+					<h2>August</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+						</tr>
+						<tr>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+						</tr>
+						<tr>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+						</tr>
+						<tr>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>1</td>
+						</tr>
+					</table>
+				</div>
+				<div id="sept" class="cal">
+					<h2>September</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+						</tr>
+						<tr>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+						</tr>
+						<tr>
+							<td>29</td>
+							<td>30</td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="oct" class="cal">
+					<h2>October</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+						</tr>
+						<tr>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+						</tr>
+						<tr>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+						</tr>
+						<tr>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+						</tr>
+						<tr>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+				<div id="nov" class="cal">
+					<h2>November</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td>1</td>
+							<td>2</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+							<td>8</td>
+							<td>9</td>
+						</tr>
+						<tr>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+							<td>15</td>
+							<td>16</td>
+						</tr>
+						<tr>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+						</tr>
+						<tr>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+						</tr>
+					</table>
+				</div>
+				<div id="dec" class="cal">
+					<h2>December</h2>
+					<table>
+						<tr>
+							<th>Sun</th>
+							<th>Mon</th>
+							<th>Tue</th>
+							<th>Wed</th>
+							<th>Thur</th>
+							<th>Fri</th>
+							<th>Sat</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>2</td>
+							<td>3</td>
+							<td>4</td>
+							<td>5</td>
+							<td>6</td>
+							<td>7</td>
+						</tr>
+						<tr>
+							<td>8</td>
+							<td>9</td>
+							<td>10</td>
+							<td>11</td>
+							<td>12</td>
+							<td>13</td>
+							<td>14</td>
+						</tr>
+						<tr>
+							<td>15</td>
+							<td>16</td>
+							<td>17</td>
+							<td>18</td>
+							<td>19</td>
+							<td>20</td>
+							<td>21</td>
+						</tr>
+						<tr>
+							<td>21</td>
+							<td>22</td>
+							<td>23</td>
+							<td>24</td>
+							<td>25</td>
+							<td>26</td>
+							<td>27</td>
+						</tr>
+						<tr>
+							<td>28</td>
+							<td>29</td>
+							<td>30</td>
+							<td>31</td>
+							<td></td>
+							<td></td>
+							<td></td>
+						</tr>
+					</table>
+				</div>
+			</div> <!-- end cal div -->
 
-</div>
+		</div> <!-- end flex grid -->
 
-	</div>
-	<footer class="green" style="margin:0px" >
+	</div> <!-- end main-content -->
+	<footer class="green" style="margin:0px">
 		<div class="flex-grid">
-		<div class="info flex-col-4">
-			<h5><b>Developers</b></h5>
-			<ul>
-				<li>Mariela Tarin, Summer Gautier, and Will Naughton</li>
-				<li>FBLA 2019 Web Design</li>
-				<li>Westwood High School, Mesa AZ.</li>
-			</ul>
+			<div class="info flex-col-4">
+				<h5><b>Developers</b></h5>
+				<ul>
+					<li>Mariela Tarin, Summer Gautier, and Will Naughton</li>
+					<li>FBLA 2019 Web Design</li>
+					<li>Westwood High School, Mesa AZ.</li>
+				</ul>
+			</div>
+			<div class="info flex-col-4">
+				<h5><b>External Credits</b></h5>
+				<ul>
+					<li><span>Icons made by <a class="underline" href="https://www.flaticon.com/authors/ddara"
+								title="dDara">dDara</a> from <a href="https://www.flaticon.com/"
+								title="Flaticon">www.flaticon.com</a></span></li>
+					<li><span>Stock Images from <a class="underline" href="https://www.pexels.com">www.pexels.com</a></span></li>
+					<li><span>Accounting FAQ questions inspired by Rudd &amp; Company <a
+								href="https://www.ruddco.com">www.ruddco.com</a></span></li>
+				</ul>
+			</div>
+			<div class="info flex-col-4">
+				<h5><b>Explore</b></h5>
+				<ul>
+					<li><a href="services.html">Services We Offer</a></li>
+					<li><a href="contact.html">Frequently Asked Questions</a></li>
+					<li><a href="bookings.html">Bookings & Calendar</a></li>
+					<li><a href="theteam.html">Learn About The Team</a></li>
+				</ul>
+			</div>
 		</div>
-		<div class="info flex-col-4">
-			<h5><b>External Credits</b></h5>
-			<ul>
-				<li><span>Icons made by <a class="underline" href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></span></li>
-				<li><span>Stock Images from <a class="underline" href="https://www.pexels.com">www.pexels.com</a></span></li>
-				<li><span>Accounting FAQ questions inspired by Rudd &amp; Company <a href="https://www.ruddco.com">www.ruddco.com</a></span></li>	
-			</ul>
-		</div>
-		<div class="info flex-col-4">
-			<h5><b>Explore</b></h5>
-			<ul>
-				<li><a href="services.html">Services We Offer</a></li>
-				<li><a href="contact.html">Frequently Asked Questions</a></li>
-				<li><a href="bookings.html">Bookings & Calendar</a></li>
-				<li><a href="theteam.html">Learn About The Team</a></li>	
-			</ul>
-		</div>
-		</div>
-    </footer>
-    <script src="js/calender.js"></script>
+	</footer>
+	<script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+	<script src="js/calender.js"></script>
 </body>
+
 </html>
 
 
