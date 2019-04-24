@@ -272,7 +272,7 @@ label{
 .nav li:not(.title){
 	float:left;
 }
-th, td {
+td {
 	height: 100px;
 }
 .nav li a.border{
